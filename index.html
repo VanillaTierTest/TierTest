@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VanillaTierList</title>
+    <title>AsiaTierList</title>
     <style>
         body {
             background-color: #1c1c1c;
@@ -72,7 +72,7 @@
     </style>
 </head>
 <body>
-    <h1>VanillaTierTest</h1>
+    <h1>AsiaTierTest</h1>
 
     <div class="tier-container">
         <div class="tier" onclick="showTierInfo('HT1')">HT1</div>
@@ -101,14 +101,10 @@
                         <span>Synthex_x - Cracked</span>
                     </div>
                     <div class="player-info">
-                        <img src="https://i.ibb.co/3YyVcMGH/cracked-player.png" alt="LivingAnsh_">
-                        <span>LivingAnsh_ - Cracked</span>
-                    </div>
-                    <div class="player-info">
                         <img src="https://i.ibb.co/3YyVcMGH/cracked-player.png" alt="PikachuX12">
                         <span>PikachuX12 - Cracked</span>
                     </div>
-                    <span>3 players have LT4</span>
+                    <span>2 players have LT4</span>
                 `;
             } else if (tier === 'LT3') {
                 tierInfo.innerHTML = `
@@ -117,6 +113,14 @@
                         <span>X_BAD_BOYS_YT_X - Cracked</span>
                     </div>
                     <span>1 player has LT3</span>
+                `;
+            } else if (tier === 'HT4') {
+                tierInfo.innerHTML = `
+                    <div class="player-info">
+                        <img src="https://i.ibb.co/3YyVcMGH/cracked-player.png" alt="LivingAnsh_">
+                        <span>LivingAnsh_ - Cracked</span>
+                    </div>
+                    <span>1 player has HT4</span>
                 `;
             } else {
                 tierInfo.innerHTML = `${tier}: No Player of ${tier}`;
